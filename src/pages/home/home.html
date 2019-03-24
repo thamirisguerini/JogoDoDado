@@ -1,6 +1,6 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>
+    <ion-title class="bg-menu">
       Jogo de Dados
     </ion-title>
   </ion-navbar>
@@ -8,26 +8,26 @@
 
 <ion-content padding class="bg-imagem">
 
+  <script src="dado.ts"></script>
     <ion-avatar class = "avatar">
         <img src = "./assets/imgs/cassino.png" >
      </ion-avatar>
 
-      <img class = "avatar1" src = "./assets/imgs/dado1.png" >
+      <img class = "avatar1" src = "./assets/imgs/dado1.png" alt="dado" id="face" >
 
 
     <ion-list>
 
         <ion-item >
-            <ion-label  color="appEscrita" floating>Seu Número: </ion-label>
-            <ion-input type="text" [(ngModel)]="num" ></ion-input>
+            <ion-label  color="aplicativo" floating>Seu Número: </ion-label>
+            <ion-input type="text" [(ngModel)]="numero" ></ion-input>
         </ion-item>
       </ion-list>
 
-      <button ion-button color="aplicativo" full icon-start (click)="jogar()">
+      <button ion-button color="aplicativo" full icon-start (click)="gerandojogo()">
           <ion-icon color="appEscrita" name="play"></ion-icon>
             Jogar
         </button>
 
-        <p> O: {{myrand}}</p>
-
+        <p class="nome" > Thamiris </p>
 </ion-content>

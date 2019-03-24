@@ -1,10 +1,17 @@
 page-home {
 
   .bg-imagem{
-    background-image: url('../assets/imgs/background.png');
+    background-image: url('../assets/imgs/background2.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+  }
+
+  .nome{
+    text-align: center;
+    font-size: 110%;
+    font-weight:bold;
+    margin-top: 25%;
   }
 
   .bg-menu{
@@ -17,17 +24,15 @@ page-home {
 
   .avatar img{
     border-radius: 50%;
-    margin-top: 20px;
     width: 200px;
     margin-left: 35px;
     }
 
   .avatar1{
       margin-left: 40%;
+      margin-top: 2%;
+      margin-bottom: 2%;
       }
 
-    .bg-menu2{
-      background-image: url('../assets/imgs/home.png');
-    }
 }
 
